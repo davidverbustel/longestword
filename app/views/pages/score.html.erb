@@ -1,2 +1,10 @@
-<h1>Pages#score</h1>
-<p>Find me in app/views/pages/score.html.erb</p>
+<h1> Now your result </h1>
+
+<p>Your grid: <strong><%= @grid %></strong></p>
+
+<p>Your word: <strong><%= @attempt %></strong></p></p>
+<p>Time Taken to answer: <%= @result[:time].round(0) %></p>
+<p>Translation: <%= @result[:translation]%></p>
+<p>Your score: <%= @result[:score]%></p>
+<p>Message: <%= @result[:message]%></p>
+
