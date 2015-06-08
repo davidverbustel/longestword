@@ -7,8 +7,8 @@ class PagesController < ApplicationController
   end
 
   def game
-    @size = params[:size]
-    @grid = generate_grid(20)
+    @size = params[:size].to_i
+    @grid = generate_grid(@size)
     @start_time = Time.now
   end
 
