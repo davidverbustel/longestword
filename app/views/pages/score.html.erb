@@ -1,10 +1,22 @@
-<h1> Now your result </h1>
+<div class="container">
 
-<p>Your grid: <strong><%= @grid %></strong></p>
+  <div class="row ">
+    <h1> Now your result </h1>
+  </div>
 
-<p>Your word: <strong><%= @attempt %></strong></p></p>
-<p>Time Taken to answer: <%= @result[:time].round(0) %></p>
-<p>Translation: <%= @result[:translation]%></p>
-<p>Your score: <%= @result[:score]%></p>
-<p>Message: <%= @result[:message]%></p>
+  <div class="row ">
+    <ul>
+      <li>Your grid: <strong><%= @grid %></strong></li>
+      <li>Your word: <strong><%= @attempt %></strong></li>
+      <li>Time Taken to answer: <%= @result[:time].round(0) %>
+</li>
+      <li>Translation: <%= @result[:translation]%></li>
+      <li>Your score: <%= @result[:score]%></li>
+      <li>Message: <%= @result[:message]%></li>
+    </ul>
+  </diV>
+
+
+
+
 
